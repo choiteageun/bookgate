@@ -1,0 +1,244 @@
+.flex
+{
+    display: flex;
+}
+.flexSort
+{
+    justify-content: center;
+    align-items: center;
+}
+.listContainer
+{
+    width: 100%;
+    height: 100%;
+}
+.backgroundImage
+{
+    position: absolute;
+    height: 10000px;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)) , url('../img/main-top.jpg'); */
+    background-image: linear-gradient(rgba(253, 177, 63, 0.3), rgba(253, 177, 63, 0.3)), url('../image/list_background.jpg');
+    opacity: 0.4;
+    z-index: -1;
+}
+.conA
+{
+    width: 100%;
+    height: 30px;
+    background-color:rgba(255,255,255,0.5);
+}
+
+.conA .container
+{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    align-items: center;
+}
+.conA .transactionType
+{
+    margin-left: 100px;
+}
+.conA .transactionType input
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.conA .sortSelectbox select
+{
+    outline: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 100px;
+    height: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid saddlebrown;
+    /* background:url(arrow.png) no-repeat 95% 9px;     */
+    background-color: rgba(255,255,255,0.2);
+
+}
+.conA .sortSelectbox .sortSelectOption
+{
+    
+}
+.conA .sortSelectbox select option
+{
+    
+}
+
+.conB .container
+{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.conB .bookList
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex:12;
+}
+.conB .bookListContent
+{
+    background-color: rgba(255,255,255,1);
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 230px;
+    height: 330px;
+    box-shadow: 10px 10px 30px 0px black, 1px 1px 1px 0px black, 1px 1px 30px 0px white;
+}
+
+.conB .bookListContent .bookContentLine
+{
+    width:80%;
+    margin:0 auto;
+    border-bottom:1px dotted black;
+    box-sizing: border-box;
+}
+.conB .bookListContent .sellerNickname
+{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    
+}
+.conB .bookListContent .sellerNickname span
+{
+    margin-right: 20px;
+}
+.conB .bookListContent .bookImage
+{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.conB .bookListContent .bookImage img
+{
+    padding: 0 1px;
+    width: 70px;
+    height: 100px;
+    box-shadow: 1px 1px 3px 0px black, 5px 10px 20px 0px #888 ;
+}
+.conB .bookListContent .bookInformation
+{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.conB .bookListContent .bookInformation .flex
+{
+    margin-bottom: 5px;
+}
+.conB .bookInformation .flex div:first-child
+{
+    flex:2;margin-left:10px;
+}
+.conB .bookInformation .flex div:last-child
+{
+    flex:4;margin-right:10px;
+}
+.conB .bookListContent .transactionBtn
+{
+    
+    width: 100%;
+    height: 50px;
+}
+.conB .bookListContent .transactionBtn .wrapper
+{
+    position: relative;
+}
+.conB .bookListContent .transactionBtn .wrapper::after
+{
+    display: block;
+}
+
+.conB .bookListContent .transactionLink
+{
+    flex: 1;
+    line-height: 50px;
+    text-align: center;
+    
+}
+
+.conB .bookListContent .transactionLink a
+{
+    z-index: 1;
+    font-size: 14px;
+    padding: 8px 15px;
+    /* background-color: rgba(253, 177, 63, 0.7); */
+    background: -webkit-linear-gradient(top,
+    rgba(238, 151, 20, 0.7),
+    rgba(247, 133, 41, 0.6) 50%,
+    rgba(248, 99, 0, 1)
+      );
+    border-radius: 5px;
+    /* box-shadow: 1px 1px 3px 0px black, 7px 7px 15px 0px #555; */
+    transition: box-shadow .5s;
+    color:white;
+}
+.conB .bookListContent .transactionLink a:hover
+{
+    box-shadow: 1px 1px 3px 0px black, 7px 7px 15px 0px #555;
+    background: -webkit-linear-gradient(top,
+    rgba(238, 151, 20, 0.9),
+    rgba(247, 133, 41, 0.6) 50%,
+    rgba(248, 99, 0, 1)
+      );
+    font-weight: bold;
+}
+
+.conB .bookListContent .aTransactionBtn::before
+{
+    
+    bottom : 12px;
+    left : 0px;
+    width: 50%;
+    height: 20%;
+    max-width: 39px;
+    max-height: 15px;
+    -webkit-box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+    -webkit-transform:rotate(-5deg);
+}
+.conB .bookListContent .aTransactionBtn::after
+{
+    bottom : 12px;
+    right : 0px;
+    width: 50%;
+    height: 20%;
+    max-width: 39px;
+    max-height: 15px;
+    -webkit-box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+    -webkit-transform:rotate(5deg);
+}
+/* .conB .bookListContent .aTransactionBtn
+{
+    position: absolute;
+    float: left;
+    width: 40%;
+    height: 50px;
+    padding: 1em;
+    margin: 2em 10px 4em;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+} */
+.conB .bookListContent .aTransactionBtn::before,
+.conB .bookListContent .aTransactionBtn::after
+{
+    content:"";
+    position: absolute;
+    z-index: -2;
+} 
+

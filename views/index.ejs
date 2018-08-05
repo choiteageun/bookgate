@@ -1,0 +1,121 @@
+<% include ./header %>
+    <link href="https://vjs.zencdn.net/7.0.5/video-js.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Righteous" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet"/>
+    <link href="/static/css/topNav.css" rel="stylesheet"/>
+    <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+<% if(message){%>
+    <h1><%=message%></h1>
+<%}%>
+<header>
+</header>
+<!--<section class="topNav" id="topNav"></section>-->
+    <section class="backgroundVidio">
+        <div class="mainVidio">
+            <div class="wrapper">
+                <video class="video-jsvjs-default-skin mainVidioFile" id="keyboard"
+                    autoplay preload="auto" loop data-setup="{}">
+                    <source id="vidio" src="/static/vidio/main-vidio.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="nav" id="nav"><% include ./topNav %></section>
+    <!-- conA : login form 작업  -->
+    <div class="allContainer" id="allContainer">
+    <section class="conA">
+        <div class="container">
+            <form method="post" action="/login">
+                <div class="loginContent" id="loginContent">
+                <div class="loginFormTitle">
+                    <h1>BookGate</h1>
+                </div>
+                <div class="inputContainer">
+                    <div class="inputContent">
+                        <input name="email" type="email" placeholder="이메일을 입력해주세요" autocomplete="off"/>
+                        <input name="password" type="password" placeholder="비밀번호를 입력해주세요"/>
+                    </div>
+                    <div class="btnContent">
+                        <input type="submit" value="Login"/>
+                    </div>
+                </div>
+                <div class="joinBtnContainer">
+                    <div class="joinBtnContent">
+                        <a href="/join">MEMBER JOIN</a>
+                    </div>
+                </div>
+                
+                </div>
+            </form>
+        </div>
+        <!--<span style="color: white;"><%=time%></span>-->
+    </section>
+    <!-- 방문자 포스터 -->
+    <section class="conB" id="conB">
+        <div class="container">
+            <div class="importantNotice notices">
+                <div class="containerTitle">
+                    <span>공지사항</span>
+                </div>
+                <div class="containerContent">
+                </div>
+            </div>
+            <div class="importantNotice notices">
+                <div class="containerTitle">
+                    <span>이벤트</span>
+                </div>
+                <div class="containerContent">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="conC" id="conC">
+        <div class="container">
+            <div class="">
+                sdasd
+            </div>
+        </div>
+    </section>
+    <section class="conD" id="conD">
+        <div class="container">
+            <div class="">
+                11111111231237676
+            </div>
+        </div>
+    </section>
+<style>
+    
+</style>
+
+<script>
+window.onload = ()=>{
+    const btn = document.querySelector('#open-modal')
+    const modal = document.querySelector('.modal')
+    $(document).on("click", "#open-modal",()=>{
+        $(".modal").addClass('active');
+        // if($(test).is(":checked")==false){
+        //     console.log("접근");
+        // }
+        // else
+        // {
+        //     console.log("비접근");
+        // }
+    });
+    // btn.onclick = () =>{
+    //     modal.classList.add('active')
+    //     //modal.classList.remove('active')
+    // }
+    
+    
+
+    $(".modal").on("click", ".closeBtn",()=>{
+        $(".modal").removeClass('active');
+    });
+}
+    
+</script>
+
+<% include ./footer %>

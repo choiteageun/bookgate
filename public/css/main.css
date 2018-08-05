@@ -1,0 +1,240 @@
+.backgroundVidio
+{
+    position : fixed;
+    top:0;
+    z-index: -2;
+    
+}
+.container
+{
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainVidioFile
+{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.mainVidio
+{
+
+}
+.allContainer
+{
+    width: 100%;
+    height: 10000px;
+    position: absolute;
+}
+.conA
+{
+    margin-top: 200px;
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+.conA .container
+{
+    
+}
+
+.conA .loginContent
+{
+    z-index: -1;
+    width: 400px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5),
+    0px 0px 5px 1px rgba(0,0,0,0.8);
+}
+@media(max-width: 400px)
+{
+    .conA .loginContent
+    {
+        width: 320px;
+    }
+}
+.conA .loginFormTitle
+{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.conA .inputContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conA .inputContent
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.conA .inputContent input
+{
+    display: block;
+    margin:10px 0px;
+    width: 250px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding-left: 20px;
+    outline-color: white;
+    transition: outline-color .5s, background-color .5s;
+    box-sizing: border-box;
+}
+.conA .inputContent input:focus
+{
+    outline-color: tomato;
+    border: 1px solid tomato;
+}
+
+.conA .btnContent
+{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color .5s, box-shadow .5s;
+}
+
+
+.conA .btnContent input
+{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.3rem;
+    width:100px;
+    height:60px;
+    line-height: 60px;
+    border:none;
+    box-sizing: border-box;
+    transition: font-size .2s;
+}
+.conA .btnContent input:hover
+{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);
+    font-size:1.4rem;
+}
+
+.conA .joinBtnContainer
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.conA .joinBtnContent
+{
+    width: 375px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conA .joinBtnContent a
+{
+    padding: 12.5px 110px;
+    line-height: 50px;
+    color: ivory;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: tomato;
+    border-radius: 5px;
+}
+@media(max-width: 400px)
+{
+    .conA .joinBtnContent
+    {
+        width: 320px;
+    }
+    .conA .joinBtnContent a
+    {
+        padding: 12.5px 83.5px;
+    }
+}
+
+.conB
+{
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+.conB .container
+{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    max-width: 1000px;
+}
+.conB .notices
+{
+    flex: 1;
+    margin: 5px 5px;
+}
+.conB .containerTitle
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: crimson;
+}
+.conB .containerTitle span
+{
+    line-height: 30px;
+    letter-spacing: 1rem;
+}
+.conB .containerContent
+{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-y: auto;
+}
+.conB .contentRow
+{
+    position: relative;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.conB .contentRow div
+{
+    flex: 0 0 200px;
+}
+.conB .contentRow .nickName
+{
+    flex: 0 0 100px;
+    margin-left: 50px;
+}
+.conB .contentRow .talkContent
+{
+    flex: 1 1 auto;
+    max-width: 700px;
+}
+
+.conC
+{
+    margin-top: 1000px;
+    height: 440px;
+}

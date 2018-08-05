@@ -1,0 +1,67 @@
+<% include ./header %>
+<link rel="stylesheet" href="/static/css/join.css"/>
+</head>
+<body>
+    <div class="joinContainer">
+        <form method="post" action="/join">
+            <section class="conA">
+                <div class="container">
+                    <div class="title">
+                        <span>회원가입</span>
+                    </div>
+                </div>
+            </section>
+            <% if(error){%>
+                <h1><%=error%></h1>
+            <%}%>
+            <section class="conB">
+                <div class="container">
+                    <div class="formGroup">
+                        <span class="required">이메일</span>
+                        <input class="formControl" name="email" type="email"/>
+                    </div>
+                    <div class="formGroup">
+                        <span class="required">비밀번호</span>
+                        <input class="formControl" name="password" type="password"/>
+                    </div>
+                    <div class="formGroup">
+                        <span class="required">비밀번호 확인</span>
+                        <input class="formControl" name="passConf" type="password"/>
+                    </div>
+                    <div class="formGroup">
+                        <span class="required">이름</span>
+                        <input class="formControl" name="name" type="name"/>
+                    </div>
+                    <div class="formGroup">
+                        <span class="required">휴대전화</span>
+                        <div>
+                            <input name="tel1" class="formControl tiny" type="text" /><span>-</span>
+                            <input name="tel2" class="formControl tiny" type="text" /><span>-</span>
+                            <input name="tel3" class="formControl tiny" type="text" />
+                        </div>
+                    </div>
+                    <div class="formGroup">
+                        <span>지역</span>
+                        <div>
+                            <input name="region1" class="formControl tiny" type="text">
+                            <span>시(군,구)</span>
+                            <input name="region2" class="formControl tiny" type="text">
+                            <span>동</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--button group(가입 버튼 , 취소 버튼) 작업 div-->
+            <section class="conC">
+                <div class="container">
+                    <div class="btnGroup">
+                        <input class="btn" type="submit" value="가입신청"/>
+                        <button class="btn">취소</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>

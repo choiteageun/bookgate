@@ -1,0 +1,106 @@
+<% include ./header %>
+<link rel="stylesheet" href="/static/css/list.css"/>
+</head>
+<body>
+<div class="listContainer">
+    <div class="backgroundImage"></div>
+    <!-- 상단 list에 뿌려줄 정렬 설정부분 -->
+    <section class="conA">
+        <div class="container">
+            <div class="transactionType">
+                <input class="transactionTypeCheck" type="checkbox" id="directly_type" name="직거래">
+                <label for="directly_type"><span>직거래</span></label>
+                <input class="transactionTypeCheck" type="checkbox" id="delivery_type" name="택배거래">
+                <label for="delivery_type"><span>택배거래</span></label>
+            </div>
+            <div class="sortSelectbox">
+                <select name="sortSelect">
+                    <option value="1" class="sortSelectOption">거리순</option>
+                    <option value="2" class="sortSelectOption">가격순</option>
+                    <option value="3" class="sortSelectOption">최신순</option>
+                    <option value="4" class="sortSelectOption">인기순</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="conB">
+        <div class="container">
+            <div class="bookList">
+                <div class="bookListContent">
+                    <div class="sellerNickname">
+                        <span>판매자 : 최태근</span>
+                    </div>
+                    <div class="bookContentLine"></div>
+
+                    <div class="bookImage">
+                        <img src="/static/image/book/book1.jpeg"/>
+                    </div>
+                    <div class="bookContentLine"></div>
+
+                    <div class="bookInformation">
+                        <div class="flex">
+                            <div><span>도서명 : </span></div>
+                            <div><span>모던웹을 위한 Node.js [3판]ㄲㄲㄲㄲㄲㄲ</span></div>
+                        </div>
+                        <div class="flex">
+                            <div><span>정가 : </span></div>
+                            <div><span>10000원</span></div>
+                        </div>
+                        <div class="flex">
+                            <div><span>판매가격 : </span></div>
+                            <div><span>1000원(90%)</span></div>
+                        </div>
+                    </div>
+                    <div class="transactionBtn">
+                        <div class="flex flexSort">
+                            <div class="transactionLink lifted"><a class="aTransactionBtn wrapper" href="/view">상세보기</a></div>
+                            <div class="transactionLink lifted"><a class="aTransactionBtn wrapper" href="#">거래신청</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent">
+                    <div class="sellerNickname">
+                        <span>판매자 : 최태근</span>
+                    </div>
+                    <div class="bookContentLine"></div>
+
+                    <div class="bookImage">
+                        <img src="/static/image/book/book2.jpg"/>
+                    </div>
+                    <div class="bookContentLine"></div>
+
+                    <div class="bookInformation">
+                        <div class="flex">
+                            <div><span>도서명 : </span></div>
+                            <div><span>모던웹을 위한 Node.js [3판]ㄲㄲㄲㄲㄲㄲ</span></div>
+                        </div>
+                        <div class="flex">
+                            <div><span>정가 : </span></div>
+                            <div><span>10000원</span></div>
+                        </div>
+                        <div class="flex">
+                            <div><span>판매가격 : </span></div>
+                            <div><span>1000원(90%)</span></div>
+                        </div>
+                    </div>
+                    <div class="transactionBtn">
+                        <div class="flex flexSort">
+                            <div class="transactionLink lifted"><a class="aTransactionBtn wrapper" href="/view">상세보기</a></div>
+                            <div class="transactionLink lifted"><a class="aTransactionBtn wrapper" href="#">거래신청</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent"></div>
+                <div class="bookListContent"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<% include ./footer %>

@@ -1,0 +1,346 @@
+body
+{
+    height: 10000px;
+}
+.background_image
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)) , url('../img/main-top.jpg'); */
+    background-image: linear-gradient(rgba(253, 177, 63, 0.3), rgba(253, 177, 63, 0.3)), url('../image/view_background.jpg');
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/********************** 상단 등록번호 + 도서명 + 닫기버튼 **********************/
+.conA
+{
+    height:70px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+.conA .wrapperConA
+{
+    
+}
+.conA .container
+{
+    background-color:rgba(255,255,255,0.6);
+    width:100%;
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conA .container div
+{
+    
+}
+.conA .container div:first-child
+{
+    color: blue;
+}
+.conA .container div:last-child
+{
+    color: red;
+}
+
+.conA .container .registrationNum
+{
+    width: 120px;
+    margin-right: 100px;
+}
+.conA .container .bookName
+{
+    flex: 5;
+    font-size: 16px;
+}
+@media(max-width:767px)
+{
+    .conA .container .bookName div:first-child
+    {
+        display: none;
+    }
+    .conA .container .registrationNum
+    {
+        margin-right: 0;
+    }
+    .conA .container .registrationNum div:first-child
+    {
+        display: none;
+    }
+}
+@media(max-width:400px)
+{
+    .conA .container .registrationNum div:first-child
+    {
+        display: inline-block;
+    }
+    .conA .container .registrationNum div:first-child:after
+    {
+        content: ' : ';
+        white-space: pre; /* html 에서 필요치 않은 공백도 다 인정해주게 하는 css*/
+        display: inline-block;
+    }
+    .conA .container .registrationNum
+    {
+        position: absolute;
+        display: flex;
+        top:0;
+        left: 0;
+        font-size:10px;
+    }
+    
+    
+}
+
+.conA .container .closeBtn
+{
+    /* position:absolute; */
+    top:15px;
+    right: 20px;
+    flex: 1;
+    text-align: center;
+    margin:0 10px;
+    
+}
+.conA .container .closeBtn div
+{
+    width: 100px;
+    padding: 10px 0;
+    background-color: white;
+    box-shadow: 2px 2px 3px 1px black;
+    border-radius: 5px;
+    transition: box-shadow .1s;
+}
+@media(max-width: 767px)
+{
+    .conA .container .closeBtn
+    {
+        position: inherit;
+    }
+    .conA .container .closeBtn div
+    {
+        width: 70px;
+        padding: 5px 0;
+    }
+}
+@media(max-width: 400px)
+{
+    .conA .container .closeBtn div
+    {
+        width: 40px;
+    }
+}
+
+.conA .container .closeBtn div:active
+{
+    box-shadow: 1px 1px 0px 0px black;
+}
+
+.conA .container .closeBtn a
+{
+    
+}
+
+
+.conB
+{
+    margin-top:2px;
+    width: 100%;
+    height: 20px;
+    
+}
+.conB .container
+{
+    width: 100%;
+    max-width: 1000px;
+    background-color:rgba(255,255,255,0.6);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.conB .container div
+{
+    margin-right: 10px;
+}
+@media(max-width:767px)
+{
+    .conB .container div div:first-child
+    {
+        display: none;
+    }
+}
+
+.conB .container > div
+{
+    margin-right: 30px;
+}
+
+.conB .container div div
+{
+    display: inline-block;
+    
+}
+
+.conC
+{
+    margin-top: 2px;
+    width: 100%;
+    height: 400px;
+    
+}
+.conC .container
+{
+    background-color:rgba(255,255,255,0.6);
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center;
+}
+.conC .bookPhoto
+{
+    flex: 2;
+    height: 400px;
+}
+.conC .bookPhoto .topPhoto
+{
+    height: 220px;
+    margin-top: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color:black;
+}
+.conC .bookPhoto .bottomPhotoContent
+{
+    height: 80px;
+    margin-top:5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color:yellow;
+}
+.conC .bookSellerInformation
+{
+    flex: 3;
+    height:370px;
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+.conC .bookSellerInformation .columns
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    font-size: 1.1rem;
+}
+
+.conD
+{
+    margin-top: 2px;
+    width: 100%;
+    height: 150px;
+}
+.conD .container
+{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255,255,255,0.6);
+}
+.conD .container .precautions
+{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+.conD .container .precautions span
+{
+    line-height: 1.5rem;
+    color: red;
+}
+
+.conE
+{
+    margin-top: 2px;
+    width: 100%;
+    height: 150px;
+}
+.conE .container
+{
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.conE .introduction
+{
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+.conF
+{
+    margin-top: 2px;
+    width: 100%;
+    height: 100px;
+}
+.conF .container
+{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
+}
+.conF .container a
+{
+    flex: 1;
+    max-width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px 20px;
+    text-align : center;
+    background: -webkit-linear-gradient(top,
+    rgb(250, 249, 189),
+    rgb(240, 198, 10) 50%,
+    rgb(218, 195, 63));
+    box-shadow: 0px 2px 5px -1px black,
+                0px 0px 5px 2px #ccc,
+                1px 1px 20px -5px #ccc;
+    /* color: purple; */
+
+}
+
+.conF .container a:first-child
+{
+    
+    border-radius: 10px;
+}
+.conF .container a:last-child
+{
+    
+    border-radius: 10px;
+}

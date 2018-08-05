@@ -1,0 +1,109 @@
+.joinContainer
+{
+    width: 100%;
+}
+.container
+{
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conA
+{
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.conA .title
+{
+    display: flex;
+    font-size : 2rem;
+    justify-content: left;
+    line-height: 50px;
+    border-bottom: 2px dotted saddlebrown;
+}
+
+.conA .title span
+{
+    letter-spacing: 0.3rem;
+    margin-left: 20px;
+}
+.conB
+{
+    margin-bottom: 40px;
+}
+.formGroup
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgba(200,200,200,0.7);
+}
+.formGroup span:first-child
+{
+    min-width: 100px;
+    margin : 0px 20px;
+    text-align: right;
+}
+.formGroup span.required:first-child::before
+{
+    content: "* ";
+    white-space: pre;
+    color: red;
+}
+.conC .container .btnGroup
+{
+    display: flex;
+    justify-content: center;
+}
+
+.conC .container .btnGroup .btn
+{
+    color: white;
+    width: 80px;
+    height: 40px;
+    background: -webkit-linear-gradient(top,
+                rgba(18, 1, 49, 0.1),
+                rgba(7, 2, 82, 0.9) 50%,
+                rgb(48, 45, 228));
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.formControl
+{
+    border: 1px solid beige;
+    background-color: beige;
+    height: 30px;
+    width: 150px;
+    padding: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+}
+.formControl:focus
+{
+    background-color: #ccc;
+}
+.formControl.tiny
+{
+    width: 60px;
+}
+
+@media(max-width: 400px)
+{
+    .formGroup
+    {
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .formGroup> span:first-child
+    {
+        text-align: left;
+        margin-left: 5px;
+    }
+}
