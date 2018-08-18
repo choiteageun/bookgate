@@ -58,7 +58,6 @@ joinRouter.post('/', (req,res)=>{
             return;
         }
         else{
-        
             models.User.create({
                 email: joinData.email,
                 password: joinData.password,
